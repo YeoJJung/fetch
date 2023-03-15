@@ -87,19 +87,49 @@ client폴더, server폴더 생성
 
         - 기본제공하는 api는 fetch이고, axios라는 라이브러리 둘다 사용해본다.
 
+------------------------------
 
 서버에서 데이터를 요청하려면 **서버주소**와 어떤 **HTTP Method**가 필요한지 알아야한다.
 
 서버 post주소를 4000으로 바꾸어준다 
 
 fetch 사용하기 방법
-https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch
-
-<img src="./img/CORS_Error.PNG">
+<https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch>
 
 
+---------------------------------
+
+CORS_Error
+
+CORS : cross origin resource sharing
+<img src="./img/CORS_Error.PNG" width="500" height="300">
+<img src="./img/CORS_console.PNG" >
+
+Client : localhost:3000(react 개발 서버)
+Server : localhost:4000
+
+서로 오리진(host와 port를 포함한 데이터의 출처)이 다르다. (port가 다르기 때문에)
+
+오리진이 다르면 데이터를 꺼내갈 수 없다.
+
+CORS정책 허용은 server에서 진행해야한다.
+
+<https://www.npmjs.com/package/cors>
+
+```
+$ npm install cors
+```
+설치한 후 밑에 코드 삽입 ( 옵션이 없으면 어떤 오리진이든 데이터를 꺼내갈 수 있다라고 허용하는 것 )
+
+```
+var cors = require('cors') // import하는것 (var말고 const로 바꿔주자)
+app.use(cors())
+```
+
+-----------------------
 
 
+react컴포넌트는 상태가 바뀌면 리랜더링이 된다. (코드를 다시실행시킨다)
 
-
+fetch가 리랜더링 될때마다 실행되는것은 좋지 않다 => useEffect쓰자
 
