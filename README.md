@@ -102,6 +102,8 @@ fetch 사용하기 방법
 CORS_Error
 
 CORS : cross origin resource sharing
+
+
 <img src="./img/CORS_Error.PNG" width="500" height="300">
 <img src="./img/CORS_console.PNG" >
 
@@ -134,7 +136,7 @@ react컴포넌트는 상태가 바뀌면 리랜더링이 된다. (코드를 다�
 fetch가 리랜더링 될때마다 실행되는것은 좋지 않다 => useEffect쓰자
 
 ------------
-과정 1
+**과정 1**
 
 <img src="./img/1.PNG"/>
 
