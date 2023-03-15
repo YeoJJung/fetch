@@ -95,7 +95,7 @@ client폴더, server폴더 생성
 fetch 사용하기 방법
 https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch
 
-<img src="img.CORS_Error.PNG">
+<img src="./img.CORS_Error.PNG">
 
 
 
