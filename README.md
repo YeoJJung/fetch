@@ -42,7 +42,17 @@ client폴더, server폴더 생성
 
     - todoList API서버 만들기
 
-
         express에서 바디에서 데이터를 꺼내쓰려면 body-parser가 필요하다.
+
+    - Postman을 이용해 post, get 하기
+        - post localhost:3000/api/todo
+        
+            postman에서 body에 삽입
+        ```
+        {
+        "text" : "todo2",
+        "done" : true
+        }
+        ```
         
 
