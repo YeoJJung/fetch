@@ -21,6 +21,7 @@ client폴더, server폴더 생성
 
     https://www.npmjs.com/search?q=express
 
+
     - 샘플코드 app.js 복붙
 
     ```
@@ -93,6 +94,8 @@ client폴더, server폴더 생성
 
 fetch 사용하기 방법
 https://developer.mozilla.org/ko/docs/Web/API/Fetch_API/Using_Fetch
+
+<img src="img.CORS_Error.PNG">
 
 
 
