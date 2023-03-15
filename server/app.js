@@ -10,9 +10,7 @@ const todoList = [
         done: false, // 안했다
     },
 ];
-app.get('/', function (req, res) {
-    res.send('Hello World');
-})
+
 
 app.get('/api/todo', (req, res) => {
     res.json(todoList); //json형태로 todolist를 보내준다
@@ -27,7 +25,6 @@ app.post('/api/todo', (req, res) => {
     });
     return res.send('success');
 })
-app.listen(3000, () => {
+app.listen(4000, () => {
     console.log('server start!!');
-
 })
