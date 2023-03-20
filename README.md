@@ -140,3 +140,20 @@ fetch가 리랜더링 될때마다 실행되는것은 좋지 않다 => useEffect
 
 <img src="./img/1.PNG"/>
 
+
+----------------
+ - axios 사용하기
+
+    ```
+    $ npm i axios
+    ```
+    App.js에 추가
+    ```
+    $ import axios from 'axios';
+    ```
+
+    복잡하다면 async await 문법 사용
+    => then으로 표기했던 부분을 리턴값을 받아서 처리할 수 있게 된다.
+-----------------------
+
+react-query라는 라이브러리를 사용하면 더 쉽다.
