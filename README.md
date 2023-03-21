@@ -157,3 +157,20 @@ fetch가 리랜더링 될때마다 실행되는것은 좋지 않다 => useEffect
 -----------------------
 
 react-query라는 라이브러리를 사용하면 더 쉽다.
+
+-------------------------
+
+kakao_login
+
+
+<https://www.youtube.com/watch?v=Re2R2rid1K4>
+
+<https://developers.kakao.com/>
+
+내 애플리케이션 새로 만들고
+JavaScript 키	8e657b1c493ad50c483a32602f746d69 이런식으로 가져오기
+
+```
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/${VERSION}/kakao.min.js"
+  integrity="${INTEGRITY_VALUE}" crossorigin="anonymous"></script>
+  ```
