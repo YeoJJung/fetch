@@ -184,7 +184,7 @@ JavaScript 키	8e657b1c493ad50c483a32602f746d69 이런식으로 가져오기
 
 해싱기능을 구현하는 redux 라이브러리이다.
 
-**해싱** : 저장한다. (store에 담겨있는 statefmf local storage session storage에 저장)
+**해싱** : 저장한다. (store에 담겨있는 state를 local storage, session storage에 저장)
 
 <img src="./img/storage.PNG">
 
@@ -196,5 +196,40 @@ JavaScript 키	8e657b1c493ad50c483a32602f746d69 이런식으로 가져오기
 - Dispatch : store에 state 입력
 - useSelector : store에 있는 state 불러오기
 
-<img src="./img/장점.PNG">
+Local Stroage와 Session Storage를 쉽게 이용할 수 있다.
 
+<img src="./img/장점.PNG">  
+
+
+3. 프로젝트 적용 방법
+
+```
+$ npm i redux-persist
+```
+
+* redux-persist는 type script를 지원해준다. type script전용 라이브러리 다운 안받아도 된다.
+
+---------------------------------
+# Typescript + React 시작하기
+참고자료=
+<https://www.kenrhee.com/blog/getting-started-with-typescript-with-react>
+
+my-app폴더 생성
+```
+$ npx create-react-app my-app --template typescript
+```
+
+----------------
+# router-test
+
+router : 라우트를 이동시키는 컨트롤 => 도구
+route : 각각의 화면 (url) => 요소
+
+npm : npm 실행시키기
+npx : 직접 까는게 아니고, 한번 쓰고 말 일회용 패키지
+
+node_modules : 리액트를 실행할때 필요한 package들
+
+node.js (npm): javascript packages 모아놓은곳
+
+.gitignore : git에 올릴때 필요 없는 파일 제외하는 공간
