@@ -99,7 +99,7 @@ fetch 사용하기 방법
 
 ---------------------------------
 
-CORS_Error
+# CORS_Error
 
 CORS : cross origin resource sharing
 
@@ -142,6 +142,7 @@ fetch가 리랜더링 될때마다 실행되는것은 좋지 않다 => useEffect
 
 
 ----------------
+ # axios
  - axios 사용하기
 
     ```
@@ -160,7 +161,7 @@ react-query라는 라이브러리를 사용하면 더 쉽다.
 
 -------------------------
 
-kakao_login
+# kakao_login
 
 
 <https://www.youtube.com/watch?v=Re2R2rid1K4>
@@ -170,7 +171,30 @@ kakao_login
 내 애플리케이션 새로 만들고
 JavaScript 키	8e657b1c493ad50c483a32602f746d69 이런식으로 가져오기
 
-```
-<script src="https://t1.kakaocdn.net/kakao_js_sdk/${VERSION}/kakao.min.js"
-  integrity="${INTEGRITY_VALUE}" crossorigin="anonymous"></script>
-  ```
+    ```
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/${VERSION}/kakao.min.js" integrity="${INTEGRITY_VALUE}" crossorigin="anonymous">
+    </script>
+    ```
+
+----------------------------
+
+# Redux Persist
+
+1. Redux-persist란?
+
+해싱기능을 구현하는 redux 라이브러리이다.
+
+**해싱** : 저장한다. (store에 담겨있는 statefmf local storage session storage에 저장)
+
+<img src="./img/storage.PNG">
+
+- Session Storage : 창이 닫힐때 까지만 저장
+- local Storage : 창이 닫히고 나서도 저장  
+
+
+2. Redux-persist의 장점
+- Dispatch : store에 state 입력
+- useSelector : store에 있는 state 불러오기
+
+<img src="./img/장점.PNG">
+
